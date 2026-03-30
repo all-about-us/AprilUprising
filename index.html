@@ -5,19 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Априлското въстание - Интерактивна карта</title>
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: #000; }
-        .container { position: relative; width: 100%; height: 100vh; }
-        iframe { border: none; width: 100%; height: 100%; }
+        /* Премахваме скролването и правим картата да запълни целия екран */
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            overflow: hidden; 
+            background-color: #1a1a1a; 
+        }
+        .map-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        iframe {
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <iframe loading="lazy" 
-    style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
-    src="https://www.canva.com/design/DAHFc8R6vBs/l4vgrhW1aue7o0BxznpyoQ/view?embed" 
-    allowfullscreen="allowfullscreen" allow="fullscreen">
-</iframe>
+    <div class="map-wrapper">
+        <iframe src="https://canva.link/w7z7peq7xldlql1" 
+                allowfullscreen="allowfullscreen" 
+                allow="fullscreen">
+        </iframe>
     </div>
 
 </body>
